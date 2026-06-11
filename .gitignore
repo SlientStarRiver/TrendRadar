@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# SQLite databases (too large for git, generated each run)
+output/news/*.db
+output/rss/*.db
+
+# Local config overrides
+config/custom/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

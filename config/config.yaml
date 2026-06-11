@@ -84,18 +84,6 @@ platforms:
     - id: "cls-hot"
       name: "财联社热门"
       expected_domain: "cls.cn"
-    - id: "ifeng"
-      name: "凤凰网"
-      expected_domain: "ifeng.com"
-    - id: "tieba"
-      name: "贴吧"
-      expected_domain: "baidu.com"
-    - id: "weibo"
-      name: "微博"
-      expected_domain: "weibo.com"
-    - id: "douyin"
-      name: "抖音"
-      expected_domain: "douyin.com"
     - id: "zhihu"
       name: "知乎"
       expected_domain: "zhihu.com"
@@ -131,22 +119,19 @@ rss:
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
 
+    - id: "36kr"
+      name: "36氪"
+      url: "https://36kr.com/feed"
+
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false                  # 禁用
-      # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
-     
+      enabled: false                  # 禁用（更新慢）
+
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
-
-    # 自定义源示例
-    # - id: "custom-feed"
-    #   name: "自定义源"
-    #   url: "https://example.com/feed.xml"
-    #   enabled: false
-    #   max_age_days: 0               # 示例：禁用过滤，推送所有文章
+      enabled: false                  # 非 AI 相关，禁用
 
 
 # ===============================================================
@@ -298,10 +283,12 @@ notification:
       webhook_url: ""                 # Slack Incoming Webhook URL
 
     generic_webhook:
-      webhook_url: ""                 # 通用 Webhook URL（支持 Discord、Matrix、IFTTT 等）
-      payload_template: ""            # JSON 模板，支持 {title} 和 {content} 占位符
-                                      # 示例：{"content": "{content}"}
-                                      # 留空则使用默认格式：{"title": "{title}", "content": "{content}"}
+      # PushPlus 微信推送（通过 GENERIC_WEBHOOK_URL / GENERIC_WEBHOOK_TEMPLATE 环境变量配置）
+      # GitHub Secrets 配置：
+      #   GENERIC_WEBHOOK_URL = https://www.pushplus.plus/send
+      #   GENERIC_WEBHOOK_TEMPLATE = {"token":"你的token","title":"{title}","content":"{content}","template":"markdown"}
+      webhook_url: ""
+      payload_template: ""
 
 
 # ===============================================================
