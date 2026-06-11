@@ -72,7 +72,7 @@ def render_html_content(
             }
 
             .container {
-                max-width: 600px;
+                max-width: 1200px;
                 margin: 0 auto;
                 background: white;
                 border-radius: 12px;
@@ -1408,6 +1408,28 @@ def render_html_content(
             }
             body.dark-mode .badge-new {
                 background: linear-gradient(135deg, #be185d, #9333ea);
+            }
+
+            /* ===== 桌面端响应式 ===== */
+            @media (min-width: 768px) {
+                body { padding: 24px; }
+                .header { padding: 40px 32px; }
+                .header-title { font-size: 28px; }
+                .header-info { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+                .info-value { font-size: 20px; }
+                .content { padding: 32px; }
+                .footer { padding: 24px 32px; }
+                .news-item { padding: 18px 0; }
+                .news-title { font-size: 15px; }
+                .word-name { font-size: 19px; }
+            }
+
+            @media (min-width: 1024px) {
+                .container { margin: 0 16px; }
+                .header { padding: 48px 40px; }
+                .header-title { font-size: 32px; }
+                .content { padding: 40px; }
+                .news-item { padding: 20px 0; }
             }
         </style>
     </head>
