@@ -18,7 +18,7 @@
             }
 
             .container {
-                max-width: 600px;
+                max-width: 1200px;
                 margin: 0 auto;
                 background: white;
                 border-radius: 12px;
@@ -1355,6 +1355,28 @@
             body.dark-mode .badge-new {
                 background: linear-gradient(135deg, #be185d, #9333ea);
             }
+
+            /* ===== 桌面端响应式 ===== */
+            @media (min-width: 768px) {
+                body { padding: 24px; }
+                .header { padding: 40px 32px; }
+                .header-title { font-size: 28px; }
+                .header-info { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+                .info-value { font-size: 20px; }
+                .content { padding: 32px; }
+                .footer { padding: 24px 32px; }
+                .news-item { padding: 18px 0; }
+                .news-title { font-size: 15px; }
+                .word-name { font-size: 19px; }
+            }
+
+            @media (min-width: 1024px) {
+                .container { margin: 0 16px; }
+                .header { padding: 48px 40px; }
+                .header-title { font-size: 32px; }
+                .content { padding: 40px; }
+                .news-item { padding: 20px 0; }
+            }
         </style>
     </head>
     <body>
@@ -1383,7 +1405,7 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">生成时间</span>
-                        <span class="info-value">06-11 15:07</span>
+                        <span class="info-value">06-11 23:57</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">热榜命中</span>
@@ -1391,7 +1413,7 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">RSS 命中</span>
-                        <span class="info-value">9 / 46</span>
+                        <span class="info-value">11 / 47</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">热榜平台</span>
@@ -1403,7 +1425,7 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">新增热点</span>
-                        <span class="info-value">9 + 9</span>
+                        <span class="info-value">9 + 11</span>
                     </div>
                     <div class="info-item">
                         <span class="info-label">AI 分析</span>
@@ -1419,7 +1441,7 @@
                 <div class="rss-section">
                     <div class="rss-section-header">
                         <div class="rss-section-title">RSS 新增更新</div>
-                        <div class="rss-section-count">9 条</div>
+                        <div class="rss-section-count">11 条</div>
                     </div>
                     <div class="rss-feeds-grid">
                     <div class="feed-group">
@@ -1428,15 +1450,21 @@
                             <div class="feed-count">4 条</div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 14:51</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 21:26</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848410549163269?f=rss" target="_blank" class="rss-link">百度爱采购发布AI经营助手“生意搭子”</a>
+                            <div class="rss-title"><a href="https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6" target="_blank" class="rss-link">Workers are spending over 6 hours a week botsitting AI, fueling job frustration</a>
                             </div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 14:30</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:29</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848387791099141?f=rss" target="_blank" class="rss-link">特朗普：很快将与顶尖的人工智能公司高管会面，讨论如何回馈公众</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848748814455809?f=rss" target="_blank" class="rss-link">FIFA世界杯足球嘉年华首站启动，联想推出多个AI体育方案</a>
+                            </div>
+                        </div>
+                        <div class="rss-item">
+                            <div class="rss-meta"><span class="rss-time">06-11 15:51</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            </div>
+                            <div class="rss-title"><a href="https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers" target="_blank" class="rss-link">Why AI hasn&#x27;t replaced software engineers, and won&#x27;t</a>
                             </div>
                         </div>
                         <div class="rss-item">
@@ -1445,28 +1473,46 @@
                             <div class="rss-title"><a href="https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/" target="_blank" class="rss-link">AI agent runs amok in Fedora and elsewhere</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="feed-group">
+                        <div class="feed-header">
+                            <div class="feed-name">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗</div>
+                            <div class="feed-count">3 条</div>
+                        </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-10 23:01</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:50</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://burr.apache.org/" target="_blank" class="rss-link">Apache Burr: Build reliable AI agents and applications</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848769064850696?f=rss" target="_blank" class="rss-link">银河微电：筹划购买功率半导体公司恒泰柯100%股权，股票停牌</a>
+                            </div>
+                        </div>
+                        <div class="rss-item">
+                            <div class="rss-meta"><span class="rss-time">06-11 20:37</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            </div>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848750479283460?f=rss" target="_blank" class="rss-link">鼎龙股份：ArF与KrF光刻胶产品获近千加仑新增订单，其是逻辑、存储芯片制造的核心刚需耗材</a>
+                            </div>
+                        </div>
+                        <div class="rss-item">
+                            <div class="rss-meta"><span class="rss-time">06-11 19:38</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            </div>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848681317127433?f=rss" target="_blank" class="rss-link">芯联集成：拟出资30.12亿元投资12英寸车规级芯片制造项目</a>
                             </div>
                         </div>
                     </div>
                     <div class="feed-group">
                         <div class="feed-header">
-                            <div class="feed-name">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗</div>
+                            <div class="feed-name">字节跳动 / 百度 / 阿里巴巴 / 腾讯 / 华为</div>
                             <div class="feed-count">2 条</div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 13:46</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:59</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848352591057923?f=rss" target="_blank" class="rss-link">5款国产脑机接口创新产品在上交会首发</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848777761444869?f=rss" target="_blank" class="rss-link">热门中概股美股盘前普跌，阿里巴巴跌超3%</a>
                             </div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-10 16:32</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:57</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/p/3847079661193733?f=rss" target="_blank" class="rss-link">氪星晚报｜韩IT巨头Kakao工会史上首次启动局部罢工；三星考虑新建先进芯片封装厂，以满足全球芯片需求；SK海力士最早将于8月在美国上市</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848776472335619?f=rss" target="_blank" class="rss-link">贵州茅台：选举陈华为董事长并聘任多名高管</a>
                             </div>
                         </div>
                     </div>
@@ -1476,21 +1522,9 @@
                             <div class="feed-count">1 条</div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 01:11</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 21:14</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://github.com/anthropics/claude-code/issues/29045" target="_blank" class="rss-link">Claude Desktop spawns 1.8 GB Hyper-V VM on every launch, even for chat-only use</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feed-group">
-                        <div class="feed-header">
-                            <div class="feed-name">AI 技术</div>
-                            <div class="feed-count">1 条</div>
-                        </div>
-                        <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 07:35</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
-                            </div>
-                            <div class="rss-title"><a href="https://academic.oup.com/pnasnexus/article/5/6/pgag149/8698838" target="_blank" class="rss-link">Deficient executive control in transformer attention</a>
+                            <div class="rss-title"><a href="https://github.com/huggingface/open-r1" target="_blank" class="rss-link">Open Reproduction of DeepSeek-R1</a>
                             </div>
                         </div>
                     </div>
@@ -1508,37 +1542,37 @@
                     </div>
                     </div>
                 </div>
-                <div class="section-divider hotlist-section"><div class="tab-bar-wrapper"><div class="tab-bar"><button class="tab-btn" data-tab-index="all">全部<span class="tab-count">9</span></button><button class="tab-btn" data-tab-index="0">AI 基础<span class="tab-count">4</span></button><button class="tab-btn" data-tab-index="1">字节跳动 / 百度 / 阿里巴巴 / 腾讯 / 华为<span class="tab-count">2</span></button><button class="tab-btn" data-tab-index="2">英伟达<span class="tab-count">2</span></button><button class="tab-btn" data-tab-index="3">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗<span class="tab-count">1</span></button></div></div>
+                <div class="section-divider hotlist-section"><div class="tab-bar-wrapper"><div class="tab-bar"><button class="tab-btn" data-tab-index="all">全部<span class="tab-count">9</span></button><button class="tab-btn" data-tab-index="0">AI 基础<span class="tab-count">6</span></button><button class="tab-btn" data-tab-index="1">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗<span class="tab-count">2</span></button><button class="tab-btn" data-tab-index="2">字节跳动 / 百度 / 阿里巴巴 / 腾讯 / 华为<span class="tab-count">1</span></button></div></div>
                 <div class="word-group" data-tab-index="0">
                     <div class="word-header">
                         <div class="word-info">
                             <div class="word-name">AI 基础</div>
-                            <div class="word-count ">4 条</div>
+                            <div class="word-count warm">6 条</div>
                         </div>
-                        <div class="word-index"><span class="collapse-icon">▼</span>1/4</div>
+                        <div class="word-index"><span class="collapse-icon">▼</span>1/3</div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">澎湃新闻</span><span class="rank-num top">3</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">财联社热门</span><span class="rank-num high">5</span><span class="time-info">23:56</span>
                             </div>
-                            <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33350280" target="_blank" class="news-link">当患者开始带着AI回答来就诊：打破医患信息差还是增加风险？责任如何界定？</a>
+                            <div class="news-title"><a href="https://www.cls.cn/detail/2397230" target="_blank" class="news-link">【焦点复盘】科创50缩量收涨0.62%，AI上游涨价概念多点开花，机器人、物理AI板块遭重挫</a>
                             </div>
                         </div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">2</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">华尔街见闻</span><span class="rank-num ">10</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">财联社热门</span><span class="rank-num ">6</span><span class="time-info">23:56</span>
                             </div>
-                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3774376" target="_blank" class="news-link">如出一辙！又一则“数据中心停工”消息引爆美国AI股新一轮调整？</a>
+                            <div class="news-title"><a href="https://www.cls.cn/detail/2397553" target="_blank" class="news-link">一份研报引爆AI硬件“惊魂时刻”，CPO和800VDC故事要改写？</a>
                             </div>
                         </div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">3</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">澎湃新闻</span><span class="rank-num ">15</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">澎湃新闻</span><span class="rank-num ">6</span><span class="time-info">23:56</span>
                             </div>
                             <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33352142" target="_blank" class="news-link">AI战略项目遇困之后，钉钉的“内忧”和“外患”</a>
                             </div>
@@ -1547,9 +1581,27 @@
                     <div class="news-item new">
                         <div class="news-number">4</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">今日头条</span><span class="rank-num ">28</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">华尔街见闻</span><span class="rank-num ">10</span><span class="time-info">23:56</span>
                             </div>
-                            <div class="news-title"><a href="https://www.toutiao.com/trending/7649760127175904777/" target="_blank" class="news-link">于娜看到已故老公AI形象崩溃大哭</a>
+                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3774376" target="_blank" class="news-link">如出一辙！又一则“数据中心停工”消息引爆美国AI股新一轮调整？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">5</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="source-name">澎湃新闻</span><span class="rank-num ">11</span><span class="time-info">23:56</span>
+                            </div>
+                            <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33352580" target="_blank" class="news-link">AI冲击就业前景引发广泛讨论，专家热议“谁将真正受益于人机混合劳动力时代”？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">6</div>
+                        <div class="news-content">
+                            <div class="news-header"><span class="source-name">百度热搜</span><span class="rank-num ">15</span><span class="time-info">23:56</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.baidu.com/s?wd=%E8%B6%85%E6%A8%A1%E5%A5%B3%E7%90%83%E8%BF%B7%E7%88%86%E7%81%AB%E5%90%8E%E5%87%BA%E9%95%9C+%E8%87%AA%E8%AF%81%E4%B8%8D%E6%98%AFAI" target="_blank" class="news-link">超模女球迷爆火后出镜 自证不是AI</a>
                             </div>
                         </div>
                     </div>
@@ -1557,26 +1609,26 @@
                 <div class="word-group" data-tab-index="1">
                     <div class="word-header">
                         <div class="word-info">
-                            <div class="word-name">字节跳动 / 百度 / 阿里巴巴 / 腾讯 / 华为</div>
+                            <div class="word-name">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗</div>
                             <div class="word-count ">2 条</div>
                         </div>
-                        <div class="word-index"><span class="collapse-icon">▼</span>2/4</div>
+                        <div class="word-index"><span class="collapse-icon">▼</span>2/3</div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">知乎</span><span class="rank-num ">7</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">知乎</span><span class="rank-num top">3</span><span class="time-info">23:56</span>
                             </div>
-                            <div class="news-title"><a href="https://www.zhihu.com/question/2048345326587569444" target="_blank" class="news-link">92 年技术极客陈宇森接任钉钉 CEO，成阿里最年轻的事业部 CEO，阿里选他的逻辑是什么？</a>
+                            <div class="news-title"><a href="https://www.zhihu.com/question/2046579534338547882" target="_blank" class="news-link">湘雅医院成功用脑机接口技术，使失明患者「复明」，这是如何实现的？</a>
                             </div>
                         </div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">2</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">知乎</span><span class="rank-num ">8</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">财联社热门</span><span class="rank-num ">8</span><span class="time-info">23:56</span>
                             </div>
-                            <div class="news-title"><a href="https://www.zhihu.com/question/2048020930757239453" target="_blank" class="news-link">华为首款超跑 SUV 智界 RX 正式官宣，会对新能源高端市场带来哪些影响？</a>
+                            <div class="news-title"><a href="https://www.cls.cn/detail/2397208" target="_blank" class="news-link">【每日收评】创业板震荡调整跌超1%， 半导体材料持续爆发，小金属概念逆势活跃</a>
                             </div>
                         </div>
                     </div>
@@ -1584,44 +1636,17 @@
                 <div class="word-group" data-tab-index="2">
                     <div class="word-header">
                         <div class="word-info">
-                            <div class="word-name">英伟达</div>
-                            <div class="word-count ">2 条</div>
-                        </div>
-                        <div class="word-index"><span class="collapse-icon">▼</span>3/4</div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">1</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="source-name">知乎</span><span class="rank-num ">9</span><span class="time-info">15:06</span>
-                            </div>
-                            <div class="news-title"><a href="https://www.zhihu.com/question/2046866003242514276" target="_blank" class="news-link">黄仁勋为什么最近频繁个性出镜？</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item new">
-                        <div class="news-number">2</div>
-                        <div class="news-content">
-                            <div class="news-header"><span class="source-name">财联社热门</span><span class="rank-num ">11</span><span class="time-info">15:06</span>
-                            </div>
-                            <div class="news-title"><a href="https://www.cls.cn/detail/2396520" target="_blank" class="news-link">英伟达、亚马逊等巨头参投 德国机器人公司Neura获最高14亿美元融资</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="word-group" data-tab-index="3">
-                    <div class="word-header">
-                        <div class="word-info">
-                            <div class="word-name">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗</div>
+                            <div class="word-name">字节跳动 / 百度 / 阿里巴巴 / 腾讯 / 华为</div>
                             <div class="word-count ">1 条</div>
                         </div>
-                        <div class="word-index"><span class="collapse-icon">▼</span>4/4</div>
+                        <div class="word-index"><span class="collapse-icon">▼</span>3/3</div>
                     </div>
                     <div class="news-item new">
                         <div class="news-number">1</div>
                         <div class="news-content">
-                            <div class="news-header"><span class="source-name">财联社热门</span><span class="rank-num top">2</span><span class="time-info">15:06</span>
+                            <div class="news-header"><span class="source-name">百度热搜</span><span class="rank-num ">25</span><span class="time-info">23:56</span>
                             </div>
-                            <div class="news-title"><a href="https://www.cls.cn/detail/2396570" target="_blank" class="news-link">美股收盘：避险情绪升温芯片板块再现抛售潮 道指纳指跌近2%</a>
+                            <div class="news-title"><a href="https://www.baidu.com/s?wd=%E9%87%91%E7%89%8C%E6%95%99%E7%BB%83%E9%82%B1%E8%B4%BB%E5%8F%AF%E8%A6%81%E6%9D%A5%E7%99%BE%E5%BA%A6%E8%81%8A%E4%B8%96%E7%95%8C%E6%9D%AF%E4%BA%86" target="_blank" class="news-link">金牌教练邱贻可要来百度聊世界杯了</a>
                             </div>
                         </div>
                     </div>
@@ -1630,7 +1655,7 @@
                 <div class="section-divider rss-section">
                     <div class="rss-section-header">
                         <div class="rss-section-title">RSS 订阅更新</div>
-                        <div class="rss-section-count">9 条</div>
+                        <div class="rss-section-count">11 条</div>
                     </div>
                     <div class="rss-feeds-grid">
                     <div class="feed-group">
@@ -1639,15 +1664,21 @@
                             <div class="feed-count">4 条</div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 14:51</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 21:26</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848410549163269?f=rss" target="_blank" class="rss-link">百度爱采购发布AI经营助手“生意搭子”</a>
+                            <div class="rss-title"><a href="https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6" target="_blank" class="rss-link">工人每周花费超过6小时照看AI，加剧工作不满情绪</a>
                             </div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 14:30</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:29</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848387791099141?f=rss" target="_blank" class="rss-link">特朗普：很快将与顶尖的人工智能公司高管会面，讨论如何回馈公众</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848748814455809?f=rss" target="_blank" class="rss-link">FIFA世界杯足球嘉年华首站启动，联想推出多个AI体育方案</a>
+                            </div>
+                        </div>
+                        <div class="rss-item">
+                            <div class="rss-meta"><span class="rss-time">06-11 15:51</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            </div>
+                            <div class="rss-title"><a href="https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers" target="_blank" class="rss-link">为何AI尚未取代软件工程师，而且也不会</a>
                             </div>
                         </div>
                         <div class="rss-item">
@@ -1656,28 +1687,46 @@
                             <div class="rss-title"><a href="https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/" target="_blank" class="rss-link">AI代理在Fedora及其他系统中失控</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="feed-group">
+                        <div class="feed-header">
+                            <div class="feed-name">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗</div>
+                            <div class="feed-count">3 条</div>
+                        </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-10 23:01</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:50</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://burr.apache.org/" target="_blank" class="rss-link">Apache Burr：构建可靠的人工智能代理与应用程序</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848769064850696?f=rss" target="_blank" class="rss-link">银河微电：筹划购买功率半导体公司恒泰柯100%股权，股票停牌</a>
+                            </div>
+                        </div>
+                        <div class="rss-item">
+                            <div class="rss-meta"><span class="rss-time">06-11 20:37</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            </div>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848750479283460?f=rss" target="_blank" class="rss-link">鼎龙股份：ArF与KrF光刻胶产品获近千加仑新增订单，其是逻辑、存储芯片制造的核心刚需耗材</a>
+                            </div>
+                        </div>
+                        <div class="rss-item">
+                            <div class="rss-meta"><span class="rss-time">06-11 19:38</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            </div>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848681317127433?f=rss" target="_blank" class="rss-link">芯联集成：拟出资30.12亿元投资12英寸车规级芯片制造项目</a>
                             </div>
                         </div>
                     </div>
                     <div class="feed-group">
                         <div class="feed-header">
-                            <div class="feed-name">芯片 / 半导体 / 光刻机 / 量子计算 / 脑机接口 / 机器人 / 机器狗</div>
+                            <div class="feed-name">字节跳动 / 百度 / 阿里巴巴 / 腾讯 / 华为</div>
                             <div class="feed-count">2 条</div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 13:46</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:59</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848352591057923?f=rss" target="_blank" class="rss-link">5款国产脑机接口创新产品在上交会首发</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848777761444869?f=rss" target="_blank" class="rss-link">热门中概股美股盘前普跌，阿里巴巴跌超3%</a>
                             </div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-10 16:32</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 20:57</span><span class="rss-author">36氪</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://36kr.com/p/3847079661193733?f=rss" target="_blank" class="rss-link">氪星晚报｜韩IT巨头Kakao工会史上首次启动局部罢工；三星考虑新建先进芯片封装厂，以满足全球芯片需求；SK海力士最早将于8月在美国上市</a>
+                            <div class="rss-title"><a href="https://36kr.com/newsflashes/3848776472335619?f=rss" target="_blank" class="rss-link">贵州茅台：选举陈华为董事长并聘任多名高管</a>
                             </div>
                         </div>
                     </div>
@@ -1687,21 +1736,9 @@
                             <div class="feed-count">1 条</div>
                         </div>
                         <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 01:11</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
+                            <div class="rss-meta"><span class="rss-time">06-11 21:14</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://github.com/anthropics/claude-code/issues/29045" target="_blank" class="rss-link">Claude Desktop每次启动生成1.8GB的Hyper-V虚拟机，即使仅用于聊天</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feed-group">
-                        <div class="feed-header">
-                            <div class="feed-name">AI 技术</div>
-                            <div class="feed-count">1 条</div>
-                        </div>
-                        <div class="rss-item">
-                            <div class="rss-meta"><span class="rss-time">06-11 07:35</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
-                            </div>
-                            <div class="rss-title"><a href="https://academic.oup.com/pnasnexus/article/5/6/pgag149/8698838" target="_blank" class="rss-link">Transformer注意力机制中的执行控制缺陷</a>
+                            <div class="rss-title"><a href="https://github.com/huggingface/open-r1" target="_blank" class="rss-link">DeepSeek-R1的开源复现</a>
                             </div>
                         </div>
                     </div>
@@ -1713,7 +1750,7 @@
                         <div class="rss-item">
                             <div class="rss-meta"><span class="rss-time">06-11 00:42</span><span class="rss-author">Hacker News</span><span class="rss-author" style="color: #dc2626;">NEW</span>
                             </div>
-                            <div class="rss-title"><a href="https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/" target="_blank" class="rss-link">网络安全研究人员对Anthropic的Fable设置的安全护栏不满</a>
+                            <div class="rss-title"><a href="https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/" target="_blank" class="rss-link">网络安全研究人员对Anthropic的Fable所设防护栏感到不满</a>
                             </div>
                         </div>
                     </div>
@@ -1727,23 +1764,23 @@
                     <div class="ai-blocks-grid">
                     <div class="ai-block">
                         <div class="ai-block-title">核心热点态势</div>
-                        <div class="ai-block-content">当前为圈层热点与破圈扩散并存状态，核心主线是“避险情绪升温与AI科技股调整忧虑”与“地缘风险升级”两大叙事交织。<br><br>【宏观主线】：<br>美国AI股因“数据中心停工”消息再遭抛售，叠加芯片板块抛售潮，反映市场对AI资本开支可持续性的根本性质疑；同时伊朗局势骤然升级（华尔街见闻数据显示霍尔木兹海峡关闭、美军威胁等）引发原油大涨、资金避险，进一步压制科技股风险偏好。<br><br>【微观领域】：<br>1. 阿里/钉钉人事变动（92年技术极客陈宇森接任CEO）引发互联网治理逻辑讨论，属行业换血信号。<br><br>2. 华为首款超跑SUV官宣，切入新能源高端市场，但热度集中在知乎小众圈层。<br><br>3. 患者携AI就诊的医患责任争议，属AI应用落地初期伦理摩擦。</div>
+                        <div class="ai-block-content">圈层热点。宏观主线：AI产业内部分化加剧，上游硬件（半导体材料、涨价概念）持续爆发，而下游应用（机器人、物理AI）遭重挫，同时数据中心成本担忧引发美股AI股新一轮调整。<br>微观领域：<br>1. 财联社焦点复盘指AI上游涨价概念多点开花，但机器人、物理AI板块遭重挫，呈现显著跷跷板效应。<br><br>2. 华尔街见闻数据中心停工消息引发美股AI调整，与财联社CPO/800VDC研报惊魂时刻形成跨平台共振，指向AI硬件投资逻辑面临重构。<br><br>3. 澎湃报道AI就业冲击引发广泛讨论，学者热议人机混合劳动力时代的受益者。<br><br>4. 知乎脑机接口技术让失明患者复明，属技术突破但热度有限。<br><br>5. 百度热搜超模女球迷自证不是AI，反映AI造假焦虑从专业圈向大众圈蔓延。</div>
                     </div>
                     <div class="ai-block">
                         <div class="ai-block-title">舆论风向争议</div>
-                        <div class="ai-block-content">【情绪光谱】：<br>主流声音为“焦虑规避”——科技股投资者担忧资本开支无底洞，地缘多头则押注能源与避险资产。潜流是“技术乐观派”仍看好AI长期叙事，如知乎关于黄仁勋个性出镜的讨论隐含对英伟达品牌营销的认可。<br><br>【核心矛盾】：<br>1. 市场对AI基建停工的恐惧 vs 科技巨头持续追加资本开支（如甲骨文新财年融资翻倍至400亿美元）。<br><br>2. 伊朗危机推高短期波动，但市场对“冲击是否会持续”存分歧（CPI数据虽高但环比低于预期，部分投资者不恐慌）。</div>
+                        <div class="ai-block-content">情绪光谱：主流声音——市场对AI硬件前景出现分歧，上游涨价概念受追捧，下游应用遭恐慌抛售。潜流暗涌——AI就业冲击讨论升温，普通大众对技术替代的焦虑与专家对生产率提升的乐观形成断层。核心矛盾：<br>1. 数据中心成本担忧（资本开支超预期）vs AI应用落地加速的认知冲突。<br><br>2. 脑机接口技术突破的兴奋感 vs 对伦理与商业化的质疑。</div>
                     </div>
                     <div class="ai-block">
                         <div class="ai-block-title">异动与弱信号</div>
-                        <div class="ai-block-content">【跨平台共振】：<br>华尔街见闻独立区“伊朗局势升级”排名1与财联社“美股芯片板块抛售”排名2形成共振，表明地缘风险与科技股抛售存在因果联动。<br><br>【轨迹突变】：<br>所有热榜条目均为单次出现，无轨迹变化，说明当前是信息快照而非持续发酵期，需警惕后续变盘。<br><br>【弱信号捕捉】：<br>知乎排名16的“小米MiMo Code开源编程助手”热度极低，但可能预示国内AI编程工具开源竞赛加速，值得跟踪。</div>
+                        <div class="ai-block-content">跨平台共振：同日出现两份指向AI硬件风险的报告（财联社CPO研报、华尔街见闻数据中心停工消息），共振信号明显，暗示潜在的系统性调整。<br><br>轨迹突变：所有热点新闻均为单次上榜（出现1次），无轨迹波动数据。但需注意：财联社“焦点复盘”和华尔街见闻“数据中心停工”均出现在23:56时间戳，作为夜间突发事件，其后续排名可能急升。<br><br>弱信号捕捉：<br>1. 百度热搜“超模女球迷爆火后出镜自证不是AI”（排名15）——AI造假焦虑已从技术圈扩散至娱乐消费场景，可能引发更广泛的信任危机。<br><br>2. 澎湃“AI战略项目遇困之后，钉钉的内忧外患”——企业级AI落地的真实困境，与大规模资本开支形成反差。</div>
                     </div>
                     <div class="ai-block">
                         <div class="ai-block-title">研判策略建议</div>
-                        <div class="ai-block-content">1. 投资者：警惕AI资本开支预期修正风险，重点关注甲骨文、英伟达等财报对数据中心停工消息的回应；同时配置部分能源与避险资产对冲地缘风险。<br><br>2. 品牌方：战略层面避免过度放大AI落地宣传（如医患AI问诊争议），转向强调技术可控性与伦理框架。阿里可借钉钉换帅强化技术极客形象。<br><br>3. 公众：关注AI医疗、编程工具等新场景的实操争议，提前建立风险认知；高考季、世界杯等社会话题可能短期分流注意力。</div>
+                        <div class="ai-block-content">1. 投资者：警惕AI硬件板块短期回调风险，关注CPO/800VDC路线是否会改写；上游半导体材料和小金属概念可持续跟踪，但需防范过度炒作。<br><br>2. 品牌方：提前部署AI生成内容鉴别和溯源技术，应对AI造假信任危机；钉钉等企业级AI服务商需平衡技术投入与商业回报。<br><br>3. 公众：关注人机混合劳动力时代的技能转型；韩国股市熔断（独立展示区域）暗示外围风险传导，需注意全球流动性收紧对A股的影响。</div>
                     </div>
                     <div class="ai-block">
                         <div class="ai-block-title">独立源点速览</div>
-                        <div class="ai-block-content">[知乎]:<br>整体排名稳定无波动，前10中“高中生火箭发射成功(第1)”“韩国股市连续三日熔断(第3)”“伊朗封锁霍尔木兹海峡(第6)”为独立区特有热点，反映科技教育、亚洲金融风险、地缘危机三大主题。此外，小米MiMo Code开源助手(第16)、比亚迪全球第一目标(第17)等较具产业价值，但热度偏低。<br><br>[华尔街见闻]:<br>排名1-10均为宏观市场动态，伊朗局势(第1)、美国CPI(第2)、甲骨文财报(第5)等构成“通胀+地缘+AI资本开支”三重压力，且均在发布后维持高位，表明华尔街见闻用户更为聚焦确定性风险。空间中“SpaceX上市交易关键点”(第8、9)为独立区特有信号，暗示商业航天资本化步伐加快。</div>
+                        <div class="ai-block-content">[知乎]:<br>20条话题覆盖广泛，整体热度分布均匀无急升。主要话题：脑机接口复明（排名3稳定）已在前板块分析；电商约谈（2）、韩国股市熔断（9）、霍尔木兹海峡（15）为当日焦点。此外，膳食师召回致失明（5）、高考迟到事件（16）引发讨论。科技类话题占比低，偏向社会民生。<br><br>[华尔街见闻]:<br>伊朗局势骤然升级（排名1）为绝对焦点，带动油价大涨、黄金暴跌、美军动态。AI数据中心成本担忧（排名4甲骨文财报）与美股科技股抛售（排名9美银报告）形成利空主线。OpenAI价格战（排名6）为行业趋势。整体呈现地缘风险与科技估值双杀格局，需警惕跨市场联动。</div>
                     </div>
                     </div>
                 </div>
